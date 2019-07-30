@@ -1,0 +1,41 @@
+<h1>Ajoute une histoire</h1>
+<div class="row">
+ 
+  <form action="/stories" method="post" class="col s12">
+  <div class="row">
+    <div class="input-field">
+      <input type="text" name="title">
+       <label for="title">Titre</label>
+    </div>
+  </div>
+
+    <div class="row">
+    <div class="input-field">
+      <select name="status">
+        <option value="public" selected>public</option>
+        <option value="privee">privée</option>
+        <option value="non publie">non publié</option>
+        </select>
+      <label for="status">Status</label>
+    </div>
+  </div>
+
+    <div class="row">
+      <p>
+        <label for="filled-in-box">
+        <input type="checkbox" name="allowComments" class="filled-in" id="filled-in-box" checked="checked">
+        <span> Commentaires autorisés</span>
+        </label>
+      </p>
+    </div>
+
+  <div class="row">
+    <div class="input-field">
+      <h5>Raconter une histoire :</h5>
+      <textarea name="body"></textarea>
+    </div>
+  </div>
+
+  <input type="submit" value="Sauvegarder" class="btn">
+  </form>
+</div>
